@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Web</title>
-    <!-- BONUS | white to green -->
-    <script src="bonus.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -15,5 +13,60 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- TOOLBAR -->
+    <div class="app">
+      <div class="tool-bar flex">
+        <div class="song-info-container flex">
+          <div class="song-info flex">
+            <img src="./img/sinister.jpeg" alt="song-photo" />
+            <div class="flex">
+              <h3>Sinister</h3>
+              <span>Brano Nome</span>
+            </div>
+          </div>
+          <div class="song-icons flex">
+            <div class="icon-wrapper">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="icon-wrapper">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+          </div>
+        </div>
+        <div class="song-main-container flex">
+          <div class="flex">
+            <div class="icon-wrapper"><i class="fa-solid fa-shuffle"></i></div>
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-backward-step"></i>
+            </div>
+            <div class="icon-wrapper">
+              <i class="fa-regular fa-circle-play"></i>
+            </div>
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-forward-step"></i>
+            </div>
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-rotate-right"></i>
+            </div>
+          </div>
+          <div class="song-player flex">
+            <span id="timer">0:00</span>
+            <div class="player-bar"></div>
+            <span>4:35</span>
+          </div>
+        </div>
+        <div class="song-audio-container flex">
+          <div class="icon-wrapper"><i class="fa-solid fa-list-ul"></i></div>
+          <div class="icon-wrapper"><i class="fa-solid fa-tv"></i></div>
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
+          <div class="volume-bar"></div>
+        </div>
+      </div>
+    </div>
+    <!-- BONUS | JS -->
+    <script src="bonus.js"></script>
+  </body>
 </html>
