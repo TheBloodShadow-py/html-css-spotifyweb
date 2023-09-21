@@ -14,8 +14,79 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- TOOLBAR -->
     <div class="app">
+      <!-- MAIN CONTENT -->
+      <main>
+        <h1>Lorem ipsum dolor sit amet,</h1>
+      </main>
+      <!-- ASIDE -->
+      <aside>
+        <div class="aside-container flex">
+          <div class="flex">
+            <div class="logo-container">
+              <img src="./img/logo.svg" alt="logo" class="logo" />
+              <img src="./img/logo-small.svg" alt="logo" class="logo-small" />
+            </div>
+            <div class="cta-container flex">
+              <div class="cta-box flex">
+                <div class="icon-wrapper home-wrapper">
+                  <img class="home" src="./img/home.svg" alt="home" />
+                </div>
+                <h3 class="home-btn">Home</h3>
+              </div>
+              <div class="cta-box flex">
+                <div class="icon-wrapper">
+                  <img src="./img/search.svg" alt="search" />
+                </div>
+                <h3>Cerca</h3>
+              </div>
+              <div class="cta-box flex">
+                <div class="icon-wrapper">
+                  <img src="./img/libreria.svg" alt="libreria" />
+                </div>
+                <h3>La tua libreria</h3>
+              </div>
+            </div>
+            <div class="playlist-container flex">
+              <h3 class="playlist-title">PLAYLIST</h3>
+              <div class="new-playlist flex">
+                <div class="plus-icon flex">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <h3>Crea Playlist</h3>
+              </div>
+              <div class="playlist flex">
+                <span>Nuova playlist</span>
+                <span>Nuova playlist</span>
+                <span>Nuova playlist</span>
+                <span>Nuova playlist</span>
+                <span>Nuova playlist</span>
+                <span>Nuova playlist</span>
+                <span>Nuova playlist</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile-container flex">
+            <div class="download-box flex">
+              <div class="icon-wrapper">
+                <img
+                  class="download-icon"
+                  src="./img/download.svg"
+                  alt="download-app"
+                />
+              </div>
+              <span>Installa app</span>
+            </div>
+            <div class="flex">
+              <div class="icon-wrapper profile-wrapper">
+                <img src="./img/profile.svg" alt="" />
+              </div>
+              <span class="user">John Doe</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- TOOLBAR -->
       <div class="tool-bar flex">
         <div class="song-info-container flex">
           <div class="song-info flex">
@@ -26,10 +97,10 @@
             </div>
           </div>
           <div class="song-icons flex">
-            <div class="icon-wrapper">
+            <div class="icon-wrapper hover-white">
               <i class="fa-regular fa-heart"></i>
             </div>
-            <div class="icon-wrapper">
+            <div class="icon-wrapper hover-white">
               <i class="fa-regular fa-folder"></i>
             </div>
           </div>
@@ -52,7 +123,9 @@
           </div>
           <div class="song-player flex">
             <span id="timer">0:00</span>
-            <div class="player-bar"></div>
+            <div class="player-bar">
+              <div class="player-flow-time flow-time"></div>
+            </div>
             <span>4:35</span>
           </div>
         </div>
@@ -62,7 +135,9 @@
           <div class="icon-wrapper">
             <i class="fa-solid fa-volume-high"></i>
           </div>
-          <div class="volume-bar"></div>
+          <div class="volume-bar">
+            <div class="flow-time"></div>
+          </div>
         </div>
       </div>
     </div>
