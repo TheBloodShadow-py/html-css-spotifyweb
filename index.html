@@ -14,10 +14,167 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div class="loader-container">
+      <div class="spinner"></div>
+    </div>
+    <script>
+      const loaderContainer = document.querySelector(".loader-container");
+      window.addEventListener("load", () => {
+        loaderContainer.style.display = "none";
+      });
+    </script>
     <div class="app">
       <!-- MAIN CONTENT -->
       <main>
-        <h1>Lorem ipsum dolor sit amet,</h1>
+        <div class="upgrade-container flex">
+          <button class="upgrade-btn">EFFETTUA L'UPGRADE</button>
+        </div>
+        <div class="container">
+          <ul class="main-nav flex">
+            <li><span>IN EVIDENZA</span></li>
+            <li><span>PODCAST</span></li>
+            <li><span>CLASSIFICHE</span></li>
+            <li><span>GENERI E MOOD</span></li>
+            <li><span>NUOVE USCITE</span></li>
+            <li><span>SCOPRI</span></li>
+          </ul>
+          <div class="row-title">
+            <h2>Recently played</h2>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <figure>
+                  <img src="./img/metal_lifting.jpg" alt="metal" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </figure>
+                <div class="text-section flex">
+                  <h3>Heavy Metal</h3>
+                  <span>Subtitle</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <figure>
+                  <img src="./img/stranger.jpeg" alt="stranger things" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </figure>
+                <div class="text-section flex">
+                  <h3>
+                    Stranger Things, Vol. 1 (a Netflix Orignal Series
+                    Soundtrack)
+                  </h3>
+                  <span>Kyle Dixon & Micheal Stein</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <figure>
+                  <img src="./img/aquietplace.jpeg" alt="quiet" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </figure>
+                <div class="text-section flex">
+                  <h3>A quiet place</h3>
+                  <span>Subtitle</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <figure>
+                  <img src="./img/split.jpeg" alt="split" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </figure>
+                <div class="text-section flex">
+                  <h3>Split</h3>
+                  <span>Subtitle</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <figure>
+                  <img src="./img/cure.jpeg" alt="cure" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </figure>
+                <div class="text-section flex">
+                  <h3>A cure for wellness</h3>
+                  <span>Subtitle</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <figure>
+                  <img src="./img/sinister.jpeg" alt="sinister" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </figure>
+                <div class="text-section flex">
+                  <h3>Sinister</h3>
+                  <span>Subtitle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-title">
+            <h2>Creato per John Doe</h2>
+            <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <figure>
+                  <img src="./img/radar.jpeg" alt="radar" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </figure>
+                <div class="text-section flex">
+                  <h3>Release Radar</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <figure>
+                  <img src="./img/mixdaily.jpeg" alt="daily mix" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </figure>
+                <div class="text-section flex">
+                  <h3>Daily Mix 1</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-title">
+            <h2>Creato per John Doe</h2>
+            <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <figure>
+                  <img class="circle" src="./img/youg.jpeg" alt="youg" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </figure>
+                <div class="text-section flex">
+                  <h3>Lana del Rey</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <figure>
+                  <img class="circle" src="./img/einaudi.jpeg" alt="einaudi" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </figure>
+                <div class="text-section flex">
+                  <h3>Ludovico Einaudi</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <!-- ASIDE -->
       <aside>
