@@ -304,8 +304,6 @@ aside {
   height: 90vh;
   width: 50px;
   padding: 10px;
-  transition: 0.2s all linear;
-  -webkit-transition: 0.2s all linear;
 }
 
 .logo-small {
@@ -833,9 +831,16 @@ main figure:hover .fa-circle-play {
   }
 
   .aside-container {
-    overflow-y: auto;
+    overflow: auto;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
+  }
+
+  .aside-container::-webkit-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    width: 0px;
+    height: 0px;
   }
 
   .playlist {
@@ -855,6 +860,14 @@ main figure:hover .fa-circle-play {
     width: calc(100vw - 230px);
     left: 230px;
     height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+  main::-webkit-scrollbar {
+    scrollbar-width: thin;
+    background-color: var(--text-color);
+    width: 0px;
   }
 
   .upgrade-container {
