@@ -304,6 +304,7 @@ aside {
   height: 90vh;
   width: 50px;
   padding: 10px;
+  padding-bottom: 40px;
 }
 
 .logo-small {
@@ -687,8 +688,16 @@ main figure:hover .fa-circle-play {
     color: var(--text-color);
   }
 
-  .cta-container h3:hover {
+  .cta-box {
+    width: fit-content;
+  }
+
+  .cta-box:hover h3 {
     color: white;
+  }
+
+  .cta-box:hover .icon-wrapper img {
+    filter: invert(0%);
   }
 
   .cta-box {
