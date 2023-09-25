@@ -393,6 +393,14 @@ main {
   left: 50px;
   height: 100%;
   width: calc(100vw - 50px);
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+main::-webkit-scrollbar {
+  scrollbar-width: thin;
+  background-color: var(--text-color);
+  width: 0px;
 }
 
 .upgrade-container {
